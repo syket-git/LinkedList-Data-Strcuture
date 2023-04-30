@@ -67,17 +67,15 @@ class SinglyLinkedList{
 
   shift(){
     if(this.isEmpty()){
-      return null; 
+      return null;
     }
-
     if(this.length === 1){
       let removeNode = this.head; 
       this.head = null;
       this.tail = null; 
       this.length = 0; 
       return removeNode;   
-    }else{
-
+    } else {
       const currentNode = this.head;
       this.head = currentNode.next;
       this.length --; 
